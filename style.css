@@ -59,6 +59,7 @@ html, body {
     align-items: center;
     justify-content: flex-end;
     -moz-user-select: -moz-none;
+    background-image: ./i1_1967ca6a.png;
 }
 
 .navbar-right ul {
@@ -110,12 +111,10 @@ html, body {
     display: flex;
     width: 100%;
     background-color: white;
-    height: -moz-calc(100% - (10px + 10px));
-    height: -webkit-calc(100% - (10px + 10px));
-    height: calc(100% - (41px + 10px));
+    height: -moz-calc(100% - (40px + 52px));
+    height: -webkit-calc(100% - (40px + 52px));
+    height: calc(100% - (40px + 53px));
     flex-direction: column;
-    justify-content: center;
-    
 }
 
 #hpimg {
@@ -125,37 +124,99 @@ html, body {
 }
 
 #logo {
-    display: flex;
-    padding-top: 100px;
+    padding-top: 150px;
     width: 272px;
-    height: 100px;
+    height: 92px;
 }
 
 #form {
-    display: flex;
+    display:flex;
     width: 100%;
     justify-content: center;
 }
 
+#search:hover {
+    border: 1px solid #dfe1e5;
+    box-shadow: 
+
+}
+
 #search {
-    width: 400px;
+    width: 588px;
     border: 1px solid;
     border-color: #dfe1e5;
     border-radius: 24px;
     height: 44px;
-    box-shadow: none;
-    z-index: 3;
     background-color: #fff;
 
+}
+
+#search-buttons-container {
+   display:flex;
+   justify-content: center;
+   flex-direction: row;
+   padding-top: 20px;
+   font-size: 14px;
+}
+
+.search-buttons {
+    appearance: none;
+    font-family: inherit;
+    width: fit-content;
+    margin-left: 5px;
+    margin-right: 5px;
+    padding-top:8px;
+    padding-bottom: 8px;
+    padding-left: 4px;
+    padding-right: 4px;
+    font-size: 14px;
+    border: 0;
+    line-height: 2.5;
+    padding: 0 20px;
+    text-align: center;
+    color: #3c4043;
+    border-radius: 4px;
+    background-color: #f8f9fa;
+   
 }
 /* Style the footer */
 .footer {
     display: flex;
+    flex-direction: row;
     width: 100%;
-    height: 10px;
     background-color: #f1f1f1;
     font-size: 14px;
+    height:40px;
+    border-top: 1px solid;
+    border-color: #dfe1e5;
+}
+
+.footer-left {
+    display: flex;
+    width: 30%;
     list-style-type: none;
+    justify-content: left;
+    padding-left: 25px;
+    
+}
+
+.footer-right {
+    display: flex;
+    width: 30%;
+    list-style-type: none;
+    justify-content: right;
+}
+
+.footer-mid {
+    display: flex;
+    width: 40%;
+    list-style-type: none;
+    justify-content: center;
+    padding-left: 20;
+}
+
+.footer li {
+   padding-right: 25px;
 }
 
 .footer a {
