@@ -178,6 +178,7 @@ html, body {
 #search:focus {
     border: 1px solid #dfe1e5;
     box-shadow: 0 1px 6px rgba(32,33,36,.28);
+    outline: none;
 }
 
 .search-icon-container {
