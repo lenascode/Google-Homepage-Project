@@ -9,10 +9,10 @@ html, body {
     margin: 0; 
     padding: 0; 
     color: #202124;
+
 }
 
 .nav {
-    padding-top: 10px;
     display: flex;
     width: 100%;
     font-size: 13px;
@@ -22,9 +22,7 @@ html, body {
     display: flex;
     flex-direction: row;
     width: 100%;
-    padding-left: 15px;
-    padding-right: 15px;
-    position: relative;
+    margin-right: auto;
     text-align: left;
     align-items: center;
     justify-content: flex-start;
@@ -32,12 +30,13 @@ html, body {
 }
 
 .navbar-left ul {
-
+    padding-left: 28px;
+    margin-left: 0px;
 }
 
 .navbar-left li {
     list-style-type: none;
-    flex-basis: 7em;
+    flex-basis: 45px;
 }
 
 .navbar-left a {
@@ -51,31 +50,45 @@ html, body {
     display: flex;
     flex-direction: row;
     width: 100%;
-    justify-content: right;
-    padding-left: 30px;
-    padding-right: 30px;
-    position: relative;
     text-align: right;
     align-items: center;
     justify-content: flex-end;
     -moz-user-select: -moz-none;
-    background-image: ./i1_1967ca6a.png;
 }
 
 .navbar-right ul {
-
 }
 
 .navbar-right li {
     list-style-type: none;
     flex-basis: 0em;
-    padding-left: 20px;
+    padding-right: 20px;
 }
 
 .navbar-right a {
     text-decoration: none;
     opacity: 0.75;
     color: black;
+}
+
+
+.background-image {
+    display:inline;
+    height: 35px;
+    width: 60px;
+    margin-left: 5px;
+    margin-right: 20px;
+    background-image: url("i1_1967ca6a.png");
+    opacity: 0.60;
+    background-position: -138px -36px;
+    background-repeat: no-repeat;
+}
+
+.background-image:hover {
+    background-image: url("i1_1967ca6a.png");
+    opacity: 1;
+    background-position: -132px -40px;
+    background-repeat: no-repeat;
 }
 
 @media all and (max-width: 600px) {  
@@ -106,6 +119,26 @@ html, body {
     text-decoration: underline;
 }
 
+.nav-signin-button {
+    appearance: none;
+    font-family: inherit;
+    font-size: 13px;
+    border: 1px solid transparent;
+    text-align: center;
+    color: #fff;
+    border-radius: 2px;
+    border: 1px solid;
+    border-color: rgb(66, 133, 244);
+    background-color:#4484f3;
+    margin: 0px 0px 0px 0px;
+    padding: 7px 13px 7px 13px;
+    white-space: nowrap;
+
+}
+.nav-signin-button:hover {
+    box-shadow: 0 1px 1px rgba(32,33,36,.28);
+
+}
 /* Style the content */
 .container {
     display: flex;
@@ -113,7 +146,7 @@ html, body {
     background-color: white;
     height: -moz-calc(100% - (40px + 52px));
     height: -webkit-calc(100% - (40px + 52px));
-    height: calc(100% - (40px + 53px));
+    height: calc(100% - (45px + 53px));
     flex-direction: column;
 }
 
@@ -137,8 +170,12 @@ html, body {
 
 #search:hover {
     border: 1px solid #dfe1e5;
-    box-shadow: 
+    box-shadow: 0 1px 6px rgba(32,33,36,.28);
+}
 
+#search:focus {
+    border: 1px solid #dfe1e5;
+    box-shadow: 0 1px 6px rgba(32,33,36,.28);
 }
 
 #search {
@@ -148,36 +185,34 @@ html, body {
     border-radius: 24px;
     height: 44px;
     background-color: #fff;
-
 }
 
-#search-buttons-container {
+.search-buttons-container {
    display:flex;
    justify-content: center;
    flex-direction: row;
-   padding-top: 20px;
    font-size: 14px;
+   padding-top: 20px;
 }
 
 .search-buttons {
     appearance: none;
     font-family: inherit;
-    width: fit-content;
-    margin-left: 5px;
-    margin-right: 5px;
-    padding-top:8px;
-    padding-bottom: 8px;
-    padding-left: 4px;
-    padding-right: 4px;
     font-size: 14px;
-    border: 0;
-    line-height: 2.5;
-    padding: 0 20px;
+    border: 1px solid transparent;
     text-align: center;
     color: #3c4043;
     border-radius: 4px;
     background-color: #f8f9fa;
-   
+    margin: 10px 10px 10px 10px;
+    padding: 10px 12px 10px 12px;
+    
+}
+
+.search-buttons:hover {
+    border: 1px solid #dadce0;
+    color: #202124;
+
 }
 /* Style the footer */
 .footer {
@@ -186,6 +221,7 @@ html, body {
     width: 100%;
     background-color: #f1f1f1;
     font-size: 14px;
+    color: #70757a;
     height:40px;
     border-top: 1px solid;
     border-color: #dfe1e5;
@@ -213,6 +249,8 @@ html, body {
     list-style-type: none;
     justify-content: center;
     padding-left: 20;
+    padding-top: 0px;
+    text-align: center;
 }
 
 .footer li {
@@ -228,4 +266,11 @@ html, body {
 
 .footer a:hover {
     text-decoration: underline;
+}
+
+#footer-image {
+    display: inline-block;
+    height: 13px;
+    padding-right: 5px;
+
 }
